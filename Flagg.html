@@ -13,46 +13,51 @@
                 var c = document.getElementById("myCanvas");
                 var ctx = c.getContext("2d");
 
+                var x=150;
+                var y=80;
+                var rectX=80;
+                var rectY=50;
+
                 ctx.beginPath();
-                ctx.rect(150, 80, 180, 120);
+                ctx.rect(x, y, 180, 120);
                 ctx.strokeStyle = "black";
                 ctx.stroke();
 
                 ctx.beginPath();
                 ctx.fillStyle = "black";
-                ctx.moveTo(150,300);
-                ctx.lineTo(150,150);
+                ctx.moveTo(x,y*4-20);
+                ctx.lineTo(x,y+70);
                 ctx.fill();
                 ctx.stroke();
 
                 ctx.beginPath();
                 ctx.fillStyle = "red";
-                ctx.rect(150, 150, 80, 50);
+                ctx.rect(x, y+70, rectX, rectY);
                 ctx.fill();
 
                 ctx.beginPath();
                 ctx.fillStyle = "red";
-                ctx.rect(150, 80, 80, 50);
+                ctx.rect(x, y, rectX, rectY);
                 ctx.fill();
 
                 ctx.beginPath();
                 ctx.fillStyle = "red";
-                ctx.rect(250, 80, 80, 50);
+                ctx.rect(250, y, rectX, rectY);
                 ctx.fill();
 
                 ctx.beginPath();
                 ctx.fillStyle = "red";
-                ctx.rect(250, 150, 80, 50);
+                ctx.rect(250, 150, rectX, rectY);
                 ctx.fill();
 
                 ctx.beginPath();
                 ctx.fillStyle = "blue";
-                ctx.rect(150, 135, 180, 10);
+                ctx.rect(x, 135, 100+rectX, 10);
                 ctx.fill();
 
                 ctx.beginPath();
                 ctx.fillStyle = "blue";
-                ctx.rect(235, 80, 10, 120);
+                ctx.rect(235, y, 10, 120);
                 ctx.fill();
 
                 ctx.beginPath();
